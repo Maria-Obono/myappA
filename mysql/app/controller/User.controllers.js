@@ -13,13 +13,13 @@ exports.create = (req, res) => {
 }
 
 // Create a Tutorial
-const User = {
+const user = {
     name: req.body.name,
     last_name: req.body.last_name,
     username: req.body.username
   };
 // Save Tutorial in the database
-User.create(tutorial)
+User.create(user)
 .then(data => {
   res.send(data);
 })
